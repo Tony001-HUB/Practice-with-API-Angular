@@ -1,4 +1,3 @@
-<div *ngFor="let item of categories">
-  <p>{{item.categoryId}}</p>
-  <p>{{item.title}}</p>
-</div>
+<app-category [category]="item" *ngFor="let item of categories">
+
+</app-category>

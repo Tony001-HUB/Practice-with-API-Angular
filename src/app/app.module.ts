@@ -5,6 +5,7 @@ import {Route, RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CategoriesComponent } from './components/categories/categories.component';
+import { CategoryComponent } from './components/category/category.component';
 
 const routes: Route[] = [
   { path: 'home', component: HomeComponent },
@@ -15,7 +16,8 @@ const routes: Route[] = [
   declarations: [
     AppComponent,
     HomeComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
