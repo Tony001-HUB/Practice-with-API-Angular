@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this.сategoryService.getCategories().subscribe(categories =>
     {
-      this.categories = categories;
+      /*this.categories = categories;*/
     });
   }
 }
