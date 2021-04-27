@@ -9,17 +9,9 @@ import { CategoriesService } from './services/categories.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
 
-  constructor(private сategoryService: CategoriesService) {}
-  public categories: Category[];
-
+  constructor() {}
   title = 'untitled';
 
-  ngOnInit(): void {
-    this.сategoryService.getCategories().subscribe(categories =>
-    {
-      /*this.categories = categories;*/
-    });
-  }
 }
