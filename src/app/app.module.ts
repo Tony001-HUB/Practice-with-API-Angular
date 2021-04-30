@@ -6,10 +6,18 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { CategoryComponent } from './components/category/category.component';
+import { CategoryByIdComponent } from './components/category-by-id/category-by-id.component';
+import { PostCategoryComponent } from './components/post-category/post-category.component';
+import { DeleteCategoryComponent } from './components/delete-category/delete-category.component';
+import { PutCategoryComponent } from './components/put-category/put-category.component';
 
 const routes: Route[] = [
   { path: 'home', component: HomeComponent },
-  { path: 'categories', component: CategoriesComponent }
+  { path: 'categories', component: CategoriesComponent },
+  { path: 'categoriesId', component: CategoryByIdComponent},
+  { path: 'postCategory', component: PostCategoryComponent},
+  { path: 'deleteCategory', component: DeleteCategoryComponent},
+  { path: 'putCategory', component: PutCategoryComponent},
 ];
 
 @NgModule({
@@ -17,7 +25,11 @@ const routes: Route[] = [
     AppComponent,
     HomeComponent,
     CategoriesComponent,
-    CategoryComponent
+    CategoryComponent,
+    CategoryByIdComponent,
+    PostCategoryComponent,
+    DeleteCategoryComponent,
+    PutCategoryComponent
   ],
   imports: [
     BrowserModule,
